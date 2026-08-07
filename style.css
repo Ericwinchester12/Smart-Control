@@ -106,6 +106,12 @@ input::placeholder {
     font-size: 14px;
 }
 
+p {
+
+    text-align: center;
+    color: var(--branco);
+    font-size: 12px;
+}
 /* Links no rodape */
 .links {
     text-align: center;
