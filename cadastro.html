@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Smart Control</title>
+</head>
+<body>
+    
+    <header>
+      
+        <img src="assets/images/logo.png" alt="FreelaHome" width="50">
+    </header>
+
+    <main>
+        <h2>Cadastro</h2>
+        <form action="POST">
+            
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">Cpf</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" minlength="8" required>
+
+            <label for="nivel">Selecione sua categoria</label>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecione...</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Freelancer">Freelancer</option>
+            </select>
+
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os Termos de Uso</label>
+
+            <div>
+                <button type="button" id="cancelar">Cancelar</button>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </div>
+            
+ 
+            <a href="index.html">Voltar ao Login</a>
+        </form>
+    </main>
+
+    <footer>
+        <h3>Nossa Sede (cidade horrorosa)</h3>
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.8610723145!2d-43.43126848126839!3d-21.75899998244727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989b5fca418045%3A0xc68297b5e43a6703!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
