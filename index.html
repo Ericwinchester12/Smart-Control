@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    
+    <title>Login - Smart Control</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main>
-        <form action="POST">
-            <img src="assets/images/logo.png" alt="FreelaHome" width="50">
-            <label for="nome">Nome Completo/CPF</label>
-            <input type="text" id="nome">
-            <label for="email-cpf">Email/CPF</label>
-            <input type="text" id="email-cpf">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha">
 
-            <button id="cancelar">Cancelar</button>
-            <a href="dashboard.html" id="entrar">Entrar</a>
-            <a href="cadastro.html">Criar conta</a>
-            <a href="">Esqueci a senha</a>
+    <main class="card">
+        <h2>Login</h2>
+
+        <!-- Icone de perfil igual ao Figma -->
+        <div class="avatar-container">
+            <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </div>
+
+        <form action="dashboard.html">
+            <input type="text" name="nome" placeholder="Digite seu nome..." required>
+            <input type="email" name="email" placeholder="Digite seu email..." required>
+            <input type="password" name="senha" placeholder="Digite sua senha..." required>
+             
+            <div class="botoes">
+                <button type="button" class="btn-cancelar">Cancelar</button>
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </div>
         </form>
-    </main>
-</body>
 
+        <div class="links">
+            <a href="cadastro.html">Criar conta</a>
+            <a href="#">Esqueci minha senha</a>
+        </div>
+    </main>
+
+</body>
 </html>
