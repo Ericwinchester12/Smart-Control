@@ -1,0 +1,117 @@
+/* reset basico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e8; /* cinza do fundo do figma */
+}
+
+/* header roxo */
+header {
+    background-color: #8c7599; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-hamburguer a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo-topo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-topo h1 {
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+/* barra de pesquisa */
+.busca {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.busca input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #aebcc4;
+    text-align: center;
+}
+
+/* esconde o label da tela mas deixa pro leitor de tela (w3c) */
+.escondido {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* grid dos 12 botoes */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px;
+    padding: 0 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.botao-servico {
+    background-color: #928ba4;
+    border: 1px solid #777;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* tabela e rodape */
+.titulo-tabela {
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #4db8ff;
+}

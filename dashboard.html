@@ -2,68 +2,86 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreelaHome - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
+  
 <body>
 
     <header>
-    <img src="assets/images/logo.png" alt="Smart Control" width="50">
-</header>
+        <div class="menu-hamburguer">
+            <!-- link do menu funfando -->
+            <a href="dashboard.css">&#9776;</a> 
+        </div>
+        
+        <div class="logo-topo">
+            <h1>FreelaHome</h1>
+            <img src="assets/images/logo.png" alt="" width="30">
+        </div>
+    </header>
 
-    <div>
-        <a href="#">Menu</a>
-        <h1>FreelaHome</h1>
-    </div>
+    <main>
+        <form class="busca">
+            <label for="filtro" class="escondido">Buscar serviços:</label>
+            <input type="text" id="filtro" placeholder="&#128269; filtro de serviços">
+        </form>
 
-    <br>
+      <div class="grid-servicos">
+    <a href="#" class="botao-servico"><img src="assets/images/eletricista-removebg-preview 1.png" alt="Elétrica"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/encanador 1.png" alt="Desentupimento"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/manicure 1.png" alt="Manicure"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/maquiadora 1.png" alt="Maquiagem"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/massagista 1.png" alt="Estética"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/pedreiro 1.png" alt="Obras"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/tarologo 1.png" alt="Tarot"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/ti 1.png" alt="Informática"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/pintor-removebg-preview 1.png" alt="Pintura"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/mecanico-removebg-preview 1.png" alt="Mecânica"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/motorista 1.png" alt="Motorista"></a>
+    <a href="#" class="botao-servico"><img src="assets/images/costureira 1.png" alt="Costura"></a>
+</div>
 
-    <form>
-        <label for="filtro">Buscar:</label>
-        <input type="text" id="filtro" placeholder="filtro de serviços">
-    </form>
+        <h2 class="titulo-tabela">Relatório de Acessos Recentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Serjão matador de onça</td>
+                    <td>04/08/2026</td>
+                    <td>19:00</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Jailson Mendes</td>
+                    <td>04/08/2026</td>
+                    <td>12:00</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Cleiton Rasta</td>
+                    <td>04/08/2026</td>
+                    <td>4:20</td>
+                    <td>Inativo</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
-    <br>
-
-    <ul>
-        <li><a href="#">Elétrica</a></li>
-        <li><a href="#">Desentupimento</a></li>
-        <li><a href="#">Manicure</a></li>
-        <li><a href="#">Maquiagem</a></li>
-        <li><a href="#">Estética</a></li>
-        <li><a href="#">Obras</a></li>
-        <li><a href="#">Tarot</a></li>
-        <li><a href="#">Informática</a></li>
-        <li><a href="#">Pintura</a></li>
-        <li><a href="#">Mecânica</a></li>
-        <li><a href="#">Motorista</a></li>
-        <li><a href="#">Costura</a></li>
-    </ul>
-
-    <br>
-
-    <h2>Relatório de Acessos Recentes</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Serjão matador de onça</td>
-                <td>04/08/2026</td>
-                <td>19:00</td>
-                <td>Ativo</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-
-    <p>Apoio: <a href="https://pedrolandia.com.br" target="_blank">Portal Pedro Landia</a></p>
+    <footer>
+        <p>Apoio: <a href="https://pedrolandia.com.br" target="_blank">Portal Pedro Landia</a></p>
+        
+        <!-- mapa do google no rodape-->
+        <h3>Sede da Empresa</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197368625732!2d-46.65882658447573!3d-23.56133968468249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1683054174092!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
 
 </body>
 </html>
