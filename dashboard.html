@@ -9,17 +9,15 @@
 
 <body>
 
+    <!-- truque do checkbox pro menu lateral funcionar so com css -->
+    <input type="checkbox" id="check-menu" style="display: none;">
+
     <header>
         <div class="logo-topo">
             <h1>FreelaHome</h1>
             <img src="assets/images/logo.png" alt="" width="30">
         </div>
         
-        <!-- menu hamburguer pro celular -->
-        <div class="menu-hamburguer">
-            <a href="#">&#9776;</a> 
-        </div>
-
         <!-- menu de links pro pc -->
         <nav class="menu-desktop">
             <ul class="menu-links">
@@ -28,7 +26,37 @@
                 <li><a href="#">Relatórios</a></li>
             </ul>
         </nav>
+
+        <!-- menu hamburguer que agora ativa o checkbox -->
+        <label for="check-menu" class="menu-hamburguer">
+            &#9776;
+        </label>
     </header>
+
+    <!-- menu lateral escondido com os requisitos do professor -->
+    <aside class="menu-lateral">
+        <h2 style="text-align: center; margin-bottom: 20px;">Indicadores</h2>
+        
+        <!-- cartoes de kpi com grid -->
+        <div class="cartoes-kpi">
+            <div class="cartao-metrica">
+                <h3>Usuários Ativos</h3>
+                <p>150 acessos</p>
+                <span class="badge-status">Ativo</span>
+            </div>
+            
+            <div class="cartao-metrica">
+                <h3>Novos Cadastros</h3>
+                <p>45 hoje</p>
+            </div>
+
+            <div class="cartao-metrica">
+                <h3>Alertas</h3>
+                <p>Sistema ok</p>
+                <span class="badge-status">3 Alertas</span>
+            </div>
+        </div>
+    </aside>
 
     <main>
         <form class="busca">
