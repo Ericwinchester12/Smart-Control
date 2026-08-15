@@ -6,41 +6,61 @@
     <title>FreelaHome - Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
-  
+
 <body>
 
     <header>
-        <div class="menu-hamburguer">
-            <!-- link do menu funfando -->
-            <a href="dashboard.css">&#9776;</a> 
-        </div>
-        
         <div class="logo-topo">
             <h1>FreelaHome</h1>
             <img src="assets/images/logo.png" alt="" width="30">
         </div>
+        
+        <!-- menu novo pra pc usando flexbox -->
+        <nav>
+            <ul class="menu-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <!-- painel de kpis -->
+        <section class="cartoes-kpi">
+            <div class="cartao">
+                <h3>Usuários Ativos</h3>
+                <p>150</p>
+            </div>
+            <div class="cartao">
+                <h3>Novos Cadastros</h3>
+                <p>45</p>
+            </div>
+            <div class="cartao">
+                <h3>Alertas</h3>
+                <p>3</p>
+            </div>
+        </section>
+
         <form class="busca">
             <label for="filtro" class="escondido">Buscar serviços:</label>
             <input type="text" id="filtro" placeholder="&#128269; filtro de serviços">
         </form>
 
-      <div class="grid-servicos">
-    <a href="#" class="botao-servico"><img src="assets/images/eletricista-removebg-preview 1.png" alt="Elétrica"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/encanador 1.png" alt="Desentupimento"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/manicure 1.png" alt="Manicure"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/maquiadora 1.png" alt="Maquiagem"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/massagista 1.png" alt="Estética"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/pedreiro 1.png" alt="Obras"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/tarologo 1.png" alt="Tarot"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/ti 1.png" alt="Informática"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/pintor-removebg-preview 1.png" alt="Pintura"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/mecanico-removebg-preview 1.png" alt="Mecânica"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/motorista 1.png" alt="Motorista"></a>
-    <a href="#" class="botao-servico"><img src="assets/images/costureira 1.png" alt="Costura"></a>
-</div>
+        <div class="grid-servicos">
+            <a href="#" class="botao-servico"><img src="assets/images/eletricista-removebg-preview 1.png" alt="Elétrica"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/encanador 1.png" alt="Desentupimento"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/manicure 1.png" alt="Manicure"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/maquiadora 1.png" alt="Maquiagem"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/massagista 1.png" alt="Estética"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/pedreiro 1.png" alt="Obras"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/tarologo 1.png" alt="Tarot"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/ti 1.png" alt="Informática"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/pintor-removebg-preview 1.png" alt="Pintura"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/mecanico-removebg-preview 1.png" alt="Mecânica"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/motorista 1.png" alt="Motorista"></a>
+            <a href="#" class="botao-servico"><img src="assets/images/costureira 1.png" alt="Costura"></a>
+        </div>
 
         <h2 class="titulo-tabela">Relatório de Acessos Recentes</h2>
         <table>
