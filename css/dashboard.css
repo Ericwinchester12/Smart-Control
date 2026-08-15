@@ -144,3 +144,42 @@ footer {
 footer a {
     color: #4db8ff;
 }
+
+/* padrao pc: esconde o hamburguer */
+.menu-hamburguer {
+    display: none;
+}
+
+.menu-hamburguer a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+/* celular: esconde kpi, links e ajusta header */
+@media (max-width: 768px) {
+    /* mantem o header numa linha so */
+    header {
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    /* some com os cartoes pra ficar igual o figma */
+    .cartoes-kpi {
+        display: none;
+    }
+
+    /* some com os links e mostra o hamburguer */
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    /* arruma o espaco do topo no mobile */
+    main {
+        padding-top: 80px;
+    }
+}
