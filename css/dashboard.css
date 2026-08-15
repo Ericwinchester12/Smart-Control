@@ -199,10 +199,3 @@ footer a {
         display: none;
     }
 }
-
-/* pc: esconde o hamburguer se for tela grande */
-@media (min-width: 769px) {
-    .menu-hamburguer {
-        display: none;
-    }
-}
