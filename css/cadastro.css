@@ -1,0 +1,122 @@
+/* reset basico pra nao quebrar nada */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* primeira tela com as duas bolinhas */
+.caixa-selecao {
+    background-color: #a4c2c9;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* limitando a largura dos formularios */
+.container-form {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 3px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* caixas de texto com o roxo do figma */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo textarea {
+    width: 100%;
+    background-color: #928ba4;
+    border: none;
+    padding: 10px;
+    color: white; /* letra branca dentro do input escuro */
+}
+
+/* arrumando o visual ao clicar no campo */
+.campo input:focus, 
+.campo textarea:focus {
+    outline: 2px solid #555;
+}
+
+/* alinhamento do checkbox de credencial pra direita */
+.campo-check {
+    text-align: right;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* botar os radios de sim e nao lado a lado */
+.radios-inline {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* arrumar os botoes em flexbox */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-cancelar, 
+.btn-cadastrar {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 45%;
+}
+
+/* deixei a fonte escura (#333) nos botoes pra passar na acessibilidade do professor */
+.btn-cancelar {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #a4c2c9;
+}
+
+.btn-cadastrar {
+    background-color: #a4c2c9;
+    color: #333;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
