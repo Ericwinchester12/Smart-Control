@@ -7,11 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8; /* cinza do fundo do figma */
+    background-color: #e8e8e8; /* cinza do fundo*/
     overflow: hidden;
 }
 
-/* header roxo com flexbox pra pc e fixed */
+/* header roxo com flexbox pra pc */
 header {
     background-color: #8c7599; 
     display: flex;
@@ -25,7 +25,7 @@ header {
 }
 
 main {
-    padding-top: 80px; /* empurra o conteudo pra baixo do header fixo */
+    padding-top: 80px; /* empurra o conteudo pra baixo do header*/
 }
 
 .logo-topo {
@@ -65,7 +65,7 @@ main {
 .menu-lateral {
     position: fixed;
     top: 50px;
-    right: -100%; /* esconde pra fora da tela */
+    right: -100%; 
     width: 300px;
     height: 100%;
     background-color: #e8e8e8;
@@ -80,7 +80,7 @@ main {
     right: 0;
 }
 
-/* container dos kpis com grid exigido */
+/* container dos kpis com grid */
 .cartoes-kpi {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,7 +94,7 @@ main {
     border: 1px solid #ccc;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    position: relative; /* exigido pro badge */
+    position: relative;
 }
 
 .badge-status {
@@ -103,7 +103,7 @@ main {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 12px;
-    position: absolute; /* exigido pro badge */
+    position: absolute; 
     top: 10px;
     right: 10px;
 }
@@ -124,7 +124,7 @@ main {
     text-align: center;
 }
 
-/* esconde o label da tela mas deixa pro leitor de tela (w3c) */
+/* esconde o label da tela */
 .escondido {
     position: absolute;
     width: 1px;
