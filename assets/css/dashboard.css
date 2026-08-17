@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8; /* cinza do fundo*/
+    background-color: #e8e8e8; /* cinza do fund*/
     overflow: hidden;
 }
 
@@ -193,7 +193,7 @@ footer a {
     color: #4db8ff;
 }
 
-/* celular: esconde os links pc e mostra so o hamburguer */
+/*esconde os links pc e mostra so o hamburguer */
 @media (max-width: 768px) {
     .menu-desktop {
         display: none;
