@@ -21,7 +21,7 @@ function exibirboasvindas() {
     let hora = String(data.getHours()).padStart(2, '0');
     let minuto = String(data.getMinutes()).padStart(2, '0');
 
-    // data sem o fuso horario
+    // data sem fuso horario
     let dataatual = `${diasemana}, ${dia}/${mes}/${ano} – ${hora}:${minuto}`;
     
     let mensagem = `Olá, ${usuario}! Hoje é ${dataatual}.`;
