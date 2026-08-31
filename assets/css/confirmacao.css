@@ -1,0 +1,39 @@
+/* assets/css/confirmacao.css */
+body {
+    background-color: #e6ecec;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.caixa-confirmacao {
+    background-color: #938c9f;
+    width: 85%;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+.icone-sucesso {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.texto-confirmacao {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.botao {
+    background-color: #a4c5c6;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}

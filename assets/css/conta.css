@@ -1,0 +1,59 @@
+/* assets/css/conta.css */
+body {
+    background-color: #e6ecec;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho {
+    background-color: #695877;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    background-color: #a4c5c6;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.campo-info {
+    background-color: #938c9f;
+    width: 85%;
+    margin-top: 5px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.botao {
+    background-color: #a4c5c6;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+label {
+    width: 85%;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
