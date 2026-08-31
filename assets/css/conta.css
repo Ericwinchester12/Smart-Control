@@ -1,6 +1,6 @@
 /* assets/css/conta.css */
 body {
-    background-color: #e6ecec;
+    background-color: #E4E4E4;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ body {
     align-items: center;
 }
 .cabecalho {
-    background-color: #695877;
-    color: white;
+    background-color: #72577C;
+    color: #FFFFFF;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -20,33 +20,33 @@ body {
 .foto-perfil {
     width: 80px;
     height: 80px;
-    background-color: #a4c5c6;
+    background-color: #A9C2C9;
     border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #FFFFFF;
     font-size: 40px;
 }
 .campo-info {
-    background-color: #938c9f;
+    background-color: #8E8CA3;
     width: 85%;
     margin-top: 5px;
     padding: 10px;
-    color: white;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
 }
 .botao {
-    background-color: #a4c5c6;
+    background-color: #A9C2C9;
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
     margin-top: 30px;
     cursor: pointer;
@@ -55,5 +55,5 @@ label {
     width: 85%;
     margin-top: 15px;
     font-size: 14px;
-    color: #333;
+    color: #333333;
 }

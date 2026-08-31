@@ -1,6 +1,6 @@
 /* assets/css/confirmacao.css */
 body {
-    background-color: #e6ecec;
+    background-color: #E4E4E4;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -12,11 +12,11 @@ body {
     text-align: center;
 }
 .caixa-confirmacao {
-    background-color: #938c9f;
+    background-color: #8E8CA3;
     width: 85%;
     padding: 30px;
     border-radius: 10px;
-    color: white;
+    color: #FFFFFF;
     box-sizing: border-box;
 }
 .icone-sucesso {
@@ -28,11 +28,11 @@ body {
     margin-bottom: 20px;
 }
 .botao {
-    background-color: #a4c5c6;
+    background-color: #A9C2C9;
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;

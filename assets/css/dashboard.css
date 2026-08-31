@@ -7,13 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8; /* cinza do fund*/
+    background-color: #E4E4E4; /* cinza do fund*/
     overflow: hidden;
 }
 
 /* header roxo com flexbox pra pc */
 header {
-    background-color: #8c7599; 
+    background-color: #72577C; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +68,7 @@ main {
     right: -100%; 
     width: 300px;
     height: 100%;
-    background-color: #e8e8e8;
+    background-color: #E4E4E4;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
     transition: 0.3s;
     padding: 20px;
@@ -98,7 +98,7 @@ main {
 }
 
 .badge-status {
-    background-color: #4db8ff;
+    background-color: #A9C2C9;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -120,7 +120,7 @@ main {
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #999;
-    background-color: #aebcc4;
+    background-color: #A9C2C9;
     text-align: center;
 }
 
@@ -147,7 +147,7 @@ main {
 }
 
 .botao-servico {
-    background-color: #928ba4;
+    background-color: #8E8CA3;
     border: 1px solid #777;
     border-radius: 5px;
     height: 80px;
@@ -190,7 +190,7 @@ footer {
 }
 
 footer a {
-    color: #4db8ff;
+    color: #A9C2C9;
 }
 
 /*esconde os links pc e mostra so o hamburguer */

@@ -1,6 +1,6 @@
 /* assets/css/historico.css */
 body {
-    background-color: #e6ecec;
+    background-color: #E4E4E4;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ body {
     align-items: center;
 }
 .cabecalho {
-    background-color: #695877;
-    color: white;
+    background-color: #72577C;
+    color: #FFFFFF;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -18,11 +18,11 @@ body {
     box-sizing: border-box;
 }
 .card-historico {
-    background-color: #938c9f;
+    background-color: #8E8CA3;
     width: 85%;
     margin-top: 15px;
     padding: 15px;
-    color: white;
+    color: #FFFFFF;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -35,10 +35,10 @@ body {
     margin-bottom: 10px;
 }
 .status {
-    background-color: #a4c5c6;
+    background-color: #A9C2C9;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 12px;
-    color: white;
+    color: #FFFFFF;
 }

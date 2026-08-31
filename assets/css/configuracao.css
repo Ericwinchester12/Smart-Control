@@ -1,6 +1,6 @@
 /* assets/css/configuracao.css */
 body {
-    background-color: #e6ecec;
+    background-color: #E4E4E4;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ body {
     align-items: center;
 }
 .cabecalho {
-    background-color: #695877;
-    color: white;
+    background-color: #72577C;
+    color: #FFFFFF;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -18,20 +18,24 @@ body {
     box-sizing: border-box;
 }
 .item-config {
-    background-color: #938c9f;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #8E8CA3;
     width: 85%;
     margin-top: 15px;
     padding: 15px;
-    color: white;
+    color: #FFFFFF;
     border-radius: 5px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .botao {
-    background-color: #a4c5c6;
+    background-color: #A9C2C9;
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
     margin-top: 30px;
     cursor: pointer;
