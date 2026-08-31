@@ -27,8 +27,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
-    font-size: 40px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+}
+
+.foto-perfil-icon {
+    width: 46px;
+    height: 46px;
+    stroke: #333333;
+    stroke-width: 1.5;
 }
 .campo-info {
     background-color: #8E8CA3;
