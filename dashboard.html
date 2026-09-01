@@ -9,13 +9,14 @@
 
 <body>
 
-    <!--menu lateral so com css -->
-    <input type="checkbox" id="check-menu" style="display: none;">
+    <!-- menu lateral (removido o checkbox) -->
 
     <header>
         <div class="logo-topo">
             <h1>FreelaHome</h1>
             <img src="assets/images/logo.png" alt="" width="30">
+            <!-- botao simples para o modo escuro perto do logo -->
+            <button id="btn-dark-mode" style="background: transparent; border: none; font-size: 20px; cursor: pointer; margin-left: 10px;">🌙</button>
         </div>
         
         <!-- menu de links-->
@@ -28,10 +29,10 @@
             </ul>
         </nav>
 
-        <!-- menu hamburguer que agora ativa o checkbox-->
-        <label for="check-menu" class="menu-hamburguer">
+        <!-- menu hamburguer usando div para js -->
+        <div id="btn-menu" class="menu-hamburguer">
             &#9776;
-        </label>
+        </div>
     </header>
 
     <!-- menu lateral escondido -->

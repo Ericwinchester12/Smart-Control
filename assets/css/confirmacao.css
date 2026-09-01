@@ -37,3 +37,21 @@ body {
     cursor: pointer;
     margin-top: 15px;
 }
+
+/* Modo Escuro */
+.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+.dark-theme .caixa-confirmacao {
+    background-color: #333;
+    color: #ddd;
+}
+.dark-theme .botao {
+    background-color: #555;
+    color: #fff;
+}
+
+body, .caixa-confirmacao, .botao {
+    transition: background-color 0.3s, color 0.3s;
+}

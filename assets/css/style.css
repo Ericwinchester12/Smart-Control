@@ -128,3 +128,25 @@ p {
 .links a:hover {
     text-decoration: underline;
 }
+
+/* Modo Escuro */
+.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+.dark-theme .card {
+    background-color: #333;
+}
+.dark-theme input {
+    background-color: #444;
+    color: #fff;
+}
+.dark-theme h2, 
+.dark-theme p, 
+.dark-theme .links a {
+    color: #ddd;
+}
+
+body, .card, input, a {
+    transition: background-color 0.3s, color 0.3s;
+}

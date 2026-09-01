@@ -75,9 +75,63 @@ main {
     z-index: 999;
 }
 
-/* magica pra abrir o menu lateral */
-#check-menu:checked ~ .menu-lateral {
+/* classe para abrir o menu via js */
+.menu-lateral.aberto {
     right: 0;
+}
+
+/* --- TEMA ESCURO (Dark Mode) --- */
+.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-theme header {
+    background-color: #4a3452; /* roxo mais escuro */
+}
+
+.dark-theme .menu-links a,
+.dark-theme .menu-hamburguer,
+.dark-theme .menu-lateral a {
+    color: #ddd !important;
+}
+
+.dark-theme .menu-lateral {
+    background-color: #333;
+}
+
+.dark-theme .cartao-metrica {
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+.dark-theme table {
+    background-color: #444;
+}
+
+.dark-theme th, .dark-theme td {
+    border: 1px solid #555;
+}
+
+.dark-theme .botao-servico {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark-theme .busca input {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.dark-theme footer {
+    background-color: #111;
+}
+
+/* transicao suave para tudo */
+body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, footer, a {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 /* container dos kpis com grid */

@@ -42,3 +42,20 @@ body {
     font-size: 12px;
     color: #FFFFFF;
 }
+
+/* Modo Escuro */
+.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+.dark-theme .cabecalho {
+    background-color: #4a3452;
+}
+.dark-theme .card-historico {
+    background-color: #333;
+    color: #ddd;
+}
+
+body, .cabecalho, .card-historico {
+    transition: background-color 0.3s, color 0.3s;
+}
