@@ -82,7 +82,7 @@ const btnMenu = document.getElementById("btn-menu");
 const menuLateral = document.querySelector(".menu-lateral");
 
 if (btnMenu && menuLateral) {
-    btnMenu.addEventListener("click", function() {
+    btnMenu.addEventListener("click", function () {
         menuLateral.classList.toggle("aberto");
     });
 }
@@ -96,16 +96,16 @@ function atualizarTextoBotaoTema() {
     }
 
     if (document.body.classList.contains("dark-theme")) {
-        btnDarkMode.textContent = "Light Mode";
+        btnDarkMode.textContent = "☀️";
     } else {
-        btnDarkMode.textContent = "Dark Mode";
+        btnDarkMode.textContent = "🌙";
     }
 }
 
 if (btnDarkMode) {
     atualizarTextoBotaoTema();
 
-    btnDarkMode.addEventListener("click", function() {
+    btnDarkMode.addEventListener("click", function () {
         document.body.classList.toggle("dark-theme");
         aplicarTemaSaudacao();
         atualizarTextoBotaoTema();
@@ -124,13 +124,13 @@ const formBusca = document.querySelector(".busca");
 const linhasTabela = document.querySelectorAll("tbody tr");
 
 if (formBusca) {
-    formBusca.addEventListener("submit", function(event) {
+    formBusca.addEventListener("submit", function (event) {
         event.preventDefault();
     });
 }
 
 if (inputFiltro && linhasTabela.length > 0) {
-    inputFiltro.addEventListener("input", function() {
+    inputFiltro.addEventListener("input", function () {
         const termoDigitado = inputFiltro.value.toLowerCase();
 
         for (let i = 0; i < linhasTabela.length; i++) {

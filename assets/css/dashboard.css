@@ -164,10 +164,10 @@ main {
 }
 
 #btn-dark-mode {
-    background: rgba(255, 255, 255, 0.08);
+    background: transparent;
     border: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
@@ -176,7 +176,7 @@ main {
 }
 
 #btn-dark-mode:hover {
-    background-color: rgba(255, 255, 255, 0.14);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, footer, a {
