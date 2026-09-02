@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #E4E4E4;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* painel principal */
@@ -54,6 +54,7 @@ main {
 }
 
 .menu-hamburguer {
+    display: none;
     font-size: 24px;
     color: black;
     cursor: pointer;
@@ -291,7 +292,57 @@ footer a {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
     .menu-desktop {
         display: none;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo-topo h1 {
+        font-size: 18px;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    .grid-servicos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 15px;
+    }
+
+    .botao-servico {
+        height: 70px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .titulo-tabela {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .menu-lateral {
+        width: 80%;
+    }
+
+    .busca input {
+        width: 90%;
     }
 }
