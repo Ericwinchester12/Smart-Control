@@ -1,6 +1,6 @@
 // Exibe a saudação do usuário no painel principal
 function exibirboasvindas() {
-    let usuario = sessionStorage.getItem("nomeUsuario");
+    let usuario = localStorage.getItem("conta_nome") || sessionStorage.getItem("nomeUsuario");
 
     if (!usuario) {
         usuario = prompt("Digite seu nome:");
