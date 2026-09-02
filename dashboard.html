@@ -15,8 +15,7 @@
         <div class="logo-topo">
             <h1>FreelaHome</h1>
             <img src="assets/images/logo.png" alt="" width="30">
-            <!-- botao simples para o modo escuro perto do logo -->
-            <button id="btn-dark-mode" style="background: transparent; border: none; font-size: 20px; cursor: pointer; margin-left: 10px;">🌙</button>
+            <button id="btn-dark-mode" type="button" aria-label="Alternar modo escuro">Dark Mode</button>
         </div>
         
         <!-- menu de links-->
@@ -69,8 +68,8 @@
 
     <main>
         <form class="busca">
-            <label for="filtro" class="escondido">Buscar serviços:</label>
-            <input type="text" id="filtro" placeholder="&#128269; filtro de serviços">
+            <label for="campoBusca" class="escondido">Buscar serviços:</label>
+            <input type="text" id="campoBusca" placeholder="&#128269; filtro de serviços">
         </form>
 
         <div class="grid-servicos">

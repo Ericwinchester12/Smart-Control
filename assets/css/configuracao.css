@@ -43,19 +43,20 @@ body {
 
 /* Modo Escuro */
 .dark-theme {
-    background-color: #222;
-    color: #ddd;
+    background-color: #171d2e;
+    color: #edf2ff;
 }
 .dark-theme .cabecalho {
-    background-color: #4a3452;
+    background-color: #2b2440;
 }
 .dark-theme .item-config {
-    background-color: #333;
-    color: #ddd;
+    background-color: #2d3345;
+    color: #edf2ff;
+    border: 1px solid #404d69;
 }
 .dark-theme .botao {
-    background-color: #555;
-    color: #fff;
+    background-color: #b9c7d9;
+    color: #1d2433;
 }
 
 body, .cabecalho, .item-config, .botao {

@@ -80,53 +80,119 @@ main {
     right: 0;
 }
 
-/* --- TEMA ESCURO (Dark Mode) --- */
+/* tema escuro do dashboard */
 .dark-theme {
-    background-color: #222;
-    color: #ddd;
+    background: linear-gradient(180deg, #171d2d 0%, #1d2434 100%);
+    color: #edf2ff;
 }
 
+/* fundo do topo e menu */
 .dark-theme header {
-    background-color: #4a3452; /* roxo mais escuro */
+    background-color: #2a243d;
 }
 
+/* texto claro no topo e no conteudo */
+.dark-theme .logo-topo h1,
+.dark-theme .menu-links a,
+.dark-theme .menu-hamburguer,
+.dark-theme .menu-lateral a,
+.dark-theme .titulo-tabela,
+.dark-theme .saudacao,
+.dark-theme .botao-servico,
+.dark-theme .busca input,
+.dark-theme footer,
+.dark-theme th,
+.dark-theme td {
+    color: #edf2ff;
+}
+
+/* botoes e links do menu em branco */
 .dark-theme .menu-links a,
 .dark-theme .menu-hamburguer,
 .dark-theme .menu-lateral a {
-    color: #ddd !important;
+    color: #f3f5ff !important;
 }
 
+/* menu lateral escuro */
 .dark-theme .menu-lateral {
-    background-color: #333;
+    background-color: #1f2431;
 }
 
+/* cards dos indicadores mais escuros */
 .dark-theme .cartao-metrica {
-    background-color: #444;
-    border: 1px solid #555;
+    background-color: #242d3f;
+    border: 1px solid #3b465d;
+    box-shadow: 0 4px 10px rgba(10, 13, 20, 0.2);
 }
 
+/* tabela com fundo suave */
 .dark-theme table {
-    background-color: #444;
+    background-color: #202838;
 }
 
 .dark-theme th, .dark-theme td {
-    border: 1px solid #555;
+    border: 1px solid #3d4a66;
+    background-color: #202838;
 }
 
+/* botoes do grid com fundo mais discreto */
 .dark-theme .botao-servico {
-    background-color: #555;
+    background-color: #2c3242;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #4a5674;
+    box-shadow: 0 3px 8px rgba(12, 15, 22, 0.2);
 }
 
+/* icones pretos viram brancos sem exagero */
+.dark-theme .botao-servico img {
+    filter: invert(1) brightness(1.1);
+    opacity: 0.95;
+}
+
+/* campo de busca escuro e legivel */
 .dark-theme .busca input {
-    background-color: #555;
-    color: #fff;
-    border: 1px solid #777;
+    background-color: #202838;
+    color: #eef3ff;
+    border: 1px solid #49597a;
 }
 
+/* barra de saudacao mais harmonica */
+.dark-theme .saudacao {
+    background-color: #2a3346;
+    color: #edf2ff;
+    border: 1px solid #4a5b7d;
+}
+
+/* badge mais suave */
+.dark-theme .badge-status {
+    background-color: #b7c5dd;
+    color: #1b2333;
+}
+
+/* rodape mais escuro */
 .dark-theme footer {
-    background-color: #111;
+    background-color: #181f2d;
+}
+
+.dark-theme footer a {
+    color: #dbe6ff;
+}
+
+/* botao de alternancia do tema */
+#btn-dark-mode {
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+#btn-dark-mode:hover {
+    background-color: rgba(255, 255, 255, 0.14);
 }
 
 /* transicao suave para tudo */

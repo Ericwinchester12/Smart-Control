@@ -131,20 +131,30 @@ p {
 
 /* Modo Escuro */
 .dark-theme {
-    background-color: #222;
-    color: #ddd;
+    background-color: #171d2e;
+    color: #edf2ff;
 }
 .dark-theme .card {
-    background-color: #333;
+    background-color: #2d3345;
+    border: 1px solid #404d69;
 }
 .dark-theme input {
-    background-color: #444;
-    color: #fff;
+    background-color: #202838;
+    color: #edf2ff;
+    border: 1px solid #49597a;
+}
+.dark-theme .btn-entrar {
+    background-color: #b9c7d9;
+    color: #1d2433;
+}
+.dark-theme .btn-cancelar {
+    color: #edf2ff;
+    border-color: #edf2ff;
 }
 .dark-theme h2, 
 .dark-theme p, 
 .dark-theme .links a {
-    color: #ddd;
+    color: #edf2ff;
 }
 
 body, .card, input, a {

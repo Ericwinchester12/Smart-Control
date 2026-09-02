@@ -63,22 +63,30 @@ label {
 
 /* Modo Escuro */
 .dark-theme {
-    background-color: #222;
-    color: #ddd;
+    background-color: #171d2e;
+    color: #edf2ff;
 }
 .dark-theme .cabecalho {
-    background-color: #4a3452;
+    background-color: #2b2440;
 }
 .dark-theme .campo-info {
-    background-color: #444;
-    color: #fff;
+    background-color: #2d3345;
+    color: #edf2ff;
+    border: 1px solid #404d69;
+}
+.dark-theme .foto-perfil {
+    background-color: #becfe0;
+    border-color: #dfeaf8;
+}
+.dark-theme .foto-perfil-icon {
+    stroke: #1b2335;
 }
 .dark-theme label {
-    color: #ddd;
+    color: #edf2ff;
 }
 .dark-theme .botao {
-    background-color: #555;
-    color: #fff;
+    background-color: #b9c7d9;
+    color: #1d2433;
 }
 
 body, .cabecalho, .campo-info, .botao, label {

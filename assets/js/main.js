@@ -40,6 +40,7 @@ function exibirboasvindas() {
     const main = document.querySelector("main");
     if (main) {
         const saudacao = document.createElement("p");
+        saudacao.classList.add("saudacao");
         saudacao.textContent = mensagem;
 
         //estilo basico js
@@ -51,21 +52,44 @@ function exibirboasvindas() {
         saudacao.style.borderRadius = '5px';
 
         main.prepend(saudacao);
+
+        window.saudacaoDashboard = saudacao;
+        aplicarTemaSaudacao();
     }
 }
 
-exibirboasvindas();
+function aplicarTemaSaudacao() {
+    const saudacao = window.saudacaoDashboard;
 
-// ==========================================
-// Funcionalidades Adicionadas
-// ==========================================
+    if (!saudacao) {
+        return;
+    }
 
-// Verifica e aplica o modo escuro salvo no localStorage ao carregar qualquer pagina
+    if (document.body.classList.contains("dark-theme")) {
+        saudacao.style.backgroundColor = '#1f2438';
+        saudacao.style.color = '#edf2ff';
+        saudacao.style.border = '1px solid #3d466d';
+    } else {
+        saudacao.style.backgroundColor = '#a4c2c9';
+        saudacao.style.color = '#111';
+        saudacao.style.border = 'none';
+    }
+}
+
+// Verifica e aplica o modo escuro ao carregar qualquer pagina
 if (localStorage.getItem("modoEscuro") === "ativado") {
     document.body.classList.add("dark-theme");
 }
 
-// 1. Menu Lateral (abrindo e fechando com JS puro)
+exibirboasvindas();
+
+if (document.body.classList.contains("dark-theme")) {
+    aplicarTemaSaudacao();
+}
+
+// Funcionalidades Adicionadas
+
+// 1. Menu Lateral com js
 const btnMenu = document.getElementById("btn-menu");
 const menuLateral = document.querySelector(".menu-lateral");
 
@@ -79,10 +103,26 @@ if (btnMenu && menuLateral) {
 // 2. Dark Mode (Modo Escuro com persistencia)
 const btnDarkMode = document.getElementById("btn-dark-mode");
 
+function atualizarTextoBotaoTema() {
+    if (!btnDarkMode) {
+        return;
+    }
+
+    if (document.body.classList.contains("dark-theme")) {
+        btnDarkMode.textContent = "Light Mode";
+    } else {
+        btnDarkMode.textContent = "Dark Mode";
+    }
+}
+
 if (btnDarkMode) {
+    atualizarTextoBotaoTema();
+
     btnDarkMode.addEventListener("click", function() {
         // adiciona ou remove a classe 'dark-theme' no corpo da pagina
         document.body.classList.toggle("dark-theme");
+        aplicarTemaSaudacao();
+        atualizarTextoBotaoTema();
 
         // salva a preferencia do usuario no localStorage para funcionar em todas as paginas
         if (document.body.classList.contains("dark-theme")) {
@@ -94,7 +134,7 @@ if (btnDarkMode) {
 }
 
 // 3. Filtro de Busca (Tempo Real)
-const inputFiltro = document.getElementById("filtro");
+const inputFiltro = document.getElementById("campoBusca") || document.getElementById("filtro");
 const formBusca = document.querySelector(".busca");
 // pega todas as linhas do corpo da tabela
 const linhasTabela = document.querySelectorAll("tbody tr");
