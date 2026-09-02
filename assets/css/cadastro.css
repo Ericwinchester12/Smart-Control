@@ -1,4 +1,3 @@
-/* reset basico pra nao quebrar nada */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     padding: 20px;
 }
 
-/* primeira tela com as duas bolinhas */
 .caixa-selecao {
     background-color: #A9C2C9;
     border-radius: 10px;
@@ -36,7 +34,6 @@ body {
     color: #333;
 }
 
-/* limitando a largura dos formularios */
 .container-form {
     width: 100%;
     max-width: 400px;
@@ -54,7 +51,6 @@ body {
     font-size: 14px;
 }
 
-/* caixas de texto com o roxo do figma */
 .campo input[type="text"],
 .campo input[type="email"],
 .campo input[type="password"],
@@ -63,16 +59,14 @@ body {
     background-color: #8E8CA3;
     border: none;
     padding: 10px;
-    color: white; /* letra branca dentro do input escuro */
+    color: white;
 }
 
-/* arrumando o visual ao clicar no campo */
-.campo input:focus, 
+.campo input:focus,
 .campo textarea:focus {
     outline: 2px solid #555;
 }
 
-/* alinhamento do checkbox de credencial pra direita */
 .campo-check {
     text-align: right;
     font-size: 12px;
@@ -81,14 +75,12 @@ body {
     color: #333;
 }
 
-/* botar os radios de sim e nao lado a lado */
 .radios-inline {
     display: flex;
     gap: 15px;
     font-size: 14px;
 }
 
-/* arrumar os botoes em flexbox */
 .botoes {
     display: flex;
     justify-content: space-between;
@@ -96,7 +88,7 @@ body {
     margin-bottom: 20px;
 }
 
-.btn-cancelar, 
+.btn-cancelar,
 .btn-cadastrar {
     text-decoration: none;
     padding: 10px;
@@ -107,7 +99,6 @@ body {
     width: 45%;
 }
 
-/* deixei a fonte escura (#333) nos botoes pra passar na acessibilidade do professor */
 .btn-cancelar {
     background-color: transparent;
     color: #333;

@@ -9,16 +9,14 @@
 
 <body>
 
-    <!-- menu lateral (removido o checkbox) -->
-
+    <!-- topo do site -->
     <header>
         <div class="logo-topo">
             <h1>FreelaHome</h1>
             <img src="assets/images/logo.png" alt="" width="30">
             <button id="btn-dark-mode" type="button" aria-label="Alternar modo escuro">Dark Mode</button>
         </div>
-        
-        <!-- menu de links-->
+
         <nav class="menu-desktop">
             <ul class="menu-links">
                 <li><a href="conta.html">Minha Conta</a></li>
@@ -28,13 +26,12 @@
             </ul>
         </nav>
 
-        <!-- menu hamburguer usando div para js -->
         <div id="btn-menu" class="menu-hamburguer">
             &#9776;
         </div>
     </header>
 
-    <!-- menu lateral escondido -->
+    <!-- menu lateral mobile -->
     <aside class="menu-lateral">
         <ul style="list-style: none; padding: 0; margin-bottom: 30px; text-align: center;">
             <li style="margin-bottom: 15px;"><a href="conta.html" style="text-decoration: none; color: black; font-weight: bold; font-size: 18px;">Minha Conta</a></li>
@@ -44,8 +41,7 @@
         </ul>
 
         <h2 style="text-align: center; margin-bottom: 20px;">Indicadores</h2>
-        
-        <!-- cartoes de kpi com grid -->
+
         <div class="cartoes-kpi">
             <div class="cartao-metrica">
                 <h3>Usuários Ativos</h3>
@@ -66,6 +62,7 @@
         </div>
     </aside>
 
+    <!-- area principal -->
     <main>
         <form class="busca">
             <label for="campoBusca" class="escondido">Buscar serviços:</label>
@@ -122,8 +119,7 @@
 
     <footer>
         <p>Apoio: <a href="https://pedrolandia.com.br" target="_blank">Portal Pedro Landia</a></p>
-        
-        <!-- mapa do google no rodape-->
+
         <h3>Sede da Empresa</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1852.8585463330878!2d-43.35255928982399!3d-21.75249085954515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c976673a705%3A0xb0aa4dd64090a7f5!2sSENAI%20Juiz%20de%20Fora%20CFP%20Jos%C3%A9%20Fagundes%20Netto!5e0!3m2!1spt-BR!2sbr!4v1786986304966!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </footer>

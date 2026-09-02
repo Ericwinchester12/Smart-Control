@@ -1,4 +1,3 @@
-/* reset basico */
 * { 
     margin: 0; 
     padding: 0; 
@@ -7,25 +6,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E4E4E4; /* cinza do fund*/
+    background-color: #E4E4E4;
     overflow: hidden;
 }
 
-/* header roxo com flexbox pra pc */
+/* painel principal */
+
 header {
     background-color: #72577C; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: fixed; /* fixo no topo */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
 main {
-    padding-top: 80px; /* empurra o conteudo pra baixo do header*/
+    padding-top: 80px;
 }
 
 .logo-topo {
@@ -39,7 +39,6 @@ main {
     font-weight: normal;
 }
 
-/* links do menu */
 .menu-links {
     display: flex;
     gap: 20px;
@@ -54,14 +53,12 @@ main {
     font-weight: bold;
 }
 
-/* icone do hamburguer */
 .menu-hamburguer {
     font-size: 24px;
     color: black;
     cursor: pointer;
 }
 
-/* menu lateral escondido */
 .menu-lateral {
     position: fixed;
     top: 50px;
@@ -75,23 +72,20 @@ main {
     z-index: 999;
 }
 
-/* classe para abrir o menu via js */
 .menu-lateral.aberto {
     right: 0;
 }
 
-/* tema escuro do dashboard */
+/* modo escuro do dashboard */
 .dark-theme {
     background: linear-gradient(180deg, #171d2d 0%, #1d2434 100%);
     color: #edf2ff;
 }
 
-/* fundo do topo e menu */
 .dark-theme header {
     background-color: #2a243d;
 }
 
-/* texto claro no topo e no conteudo */
 .dark-theme .logo-topo h1,
 .dark-theme .menu-links a,
 .dark-theme .menu-hamburguer,
@@ -106,26 +100,22 @@ main {
     color: #edf2ff;
 }
 
-/* botoes e links do menu em branco */
 .dark-theme .menu-links a,
 .dark-theme .menu-hamburguer,
 .dark-theme .menu-lateral a {
     color: #f3f5ff !important;
 }
 
-/* menu lateral escuro */
 .dark-theme .menu-lateral {
     background-color: #1f2431;
 }
 
-/* cards dos indicadores mais escuros */
 .dark-theme .cartao-metrica {
     background-color: #242d3f;
     border: 1px solid #3b465d;
     box-shadow: 0 4px 10px rgba(10, 13, 20, 0.2);
 }
 
-/* tabela com fundo suave */
 .dark-theme table {
     background-color: #202838;
 }
@@ -135,7 +125,6 @@ main {
     background-color: #202838;
 }
 
-/* botoes do grid com fundo mais discreto */
 .dark-theme .botao-servico {
     background-color: #2c3242;
     color: #fff;
@@ -143,33 +132,28 @@ main {
     box-shadow: 0 3px 8px rgba(12, 15, 22, 0.2);
 }
 
-/* icones pretos viram brancos sem exagero */
 .dark-theme .botao-servico img {
     filter: invert(1) brightness(1.1);
     opacity: 0.95;
 }
 
-/* campo de busca escuro e legivel */
 .dark-theme .busca input {
     background-color: #202838;
     color: #eef3ff;
     border: 1px solid #49597a;
 }
 
-/* barra de saudacao mais harmonica */
 .dark-theme .saudacao {
     background-color: #2a3346;
     color: #edf2ff;
     border: 1px solid #4a5b7d;
 }
 
-/* badge mais suave */
 .dark-theme .badge-status {
     background-color: #b7c5dd;
     color: #1b2333;
 }
 
-/* rodape mais escuro */
 .dark-theme footer {
     background-color: #181f2d;
 }
@@ -178,7 +162,6 @@ main {
     color: #dbe6ff;
 }
 
-/* botao de alternancia do tema */
 #btn-dark-mode {
     background: rgba(255, 255, 255, 0.08);
     border: none;
@@ -195,12 +178,10 @@ main {
     background-color: rgba(255, 255, 255, 0.14);
 }
 
-/* transicao suave para tudo */
 body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, footer, a {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-/* container dos kpis com grid */
 .cartoes-kpi {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -228,7 +209,6 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     right: 10px;
 }
 
-/* barra de pesquisa */
 .busca {
     text-align: center;
     margin: 20px 0;
@@ -244,7 +224,6 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     text-align: center;
 }
 
-/* esconde o label da tela */
 .escondido {
     position: absolute;
     width: 1px;
@@ -256,10 +235,9 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     border: 0;
 }
 
-/* grid dos 12 botoes */
 .grid-servicos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 0 20px;
     margin: 0 auto;
@@ -281,7 +259,6 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-/* tabela e rodape */
 .titulo-tabela {
     text-align: center;
     margin-top: 30px;
@@ -313,7 +290,6 @@ footer a {
     color: #A9C2C9;
 }
 
-/*esconde os links pc e mostra so o hamburguer */
 @media (max-width: 768px) {
     .menu-desktop {
         display: none;

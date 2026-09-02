@@ -6,7 +6,6 @@
     --branco: #FFFFFF;
 }
 
-/* Fundo da tela */
 body {
     background-color: var(--fundo-gelo);
     font-family: Arial, sans-serif;
@@ -18,7 +17,6 @@ body {
     min-height: 100vh;
 }
 
-/* Caixa principal */
 .card {
     background-color: var(--roxo-cinzento);
     width: 320px;
@@ -26,7 +24,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Titulo Login */
 h2 {
     color: var(--branco);
     text-align: center;
@@ -36,7 +33,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Circulo do icone de perfil */
 .avatar-container {
     width: 65px;
     height: 65px;
@@ -54,7 +50,6 @@ h2 {
     height: 38px;
 }
 
-/* Campos de entrada */
 input {
     width: 100%;
     padding: 10px 12px;
@@ -67,13 +62,11 @@ input {
     font-size: 14px;
 }
 
-/* Cor do texto de dica */
 input::placeholder {
     color: var(--branco);
     opacity: 0.9;
 }
 
-/* Alinhamento dos botoes */
 .botoes {
     display: flex;
     justify-content: space-between;
@@ -82,7 +75,6 @@ input::placeholder {
     margin-bottom: 20px;
 }
 
-/* Botao Cancelar */
 .btn-cancelar {
     flex: 1;
     padding: 8px 0;
@@ -94,7 +86,6 @@ input::placeholder {
     font-size: 14px;
 }
 
-/* Botao Entrar */
 .btn-entrar {
     flex: 1;
     padding: 8px 0;
@@ -107,12 +98,11 @@ input::placeholder {
 }
 
 p {
-
     text-align: center;
     color: var(--branco);
     font-size: 12px;
 }
-/* Links no rodape */
+
 .links {
     text-align: center;
 }
@@ -129,30 +119,34 @@ p {
     text-decoration: underline;
 }
 
-/* Modo Escuro */
 .dark-theme {
     background-color: #171d2e;
     color: #edf2ff;
 }
+
 .dark-theme .card {
     background-color: #2d3345;
     border: 1px solid #404d69;
 }
+
 .dark-theme input {
     background-color: #202838;
     color: #edf2ff;
     border: 1px solid #49597a;
 }
+
 .dark-theme .btn-entrar {
     background-color: #b9c7d9;
     color: #1d2433;
 }
+
 .dark-theme .btn-cancelar {
     color: #edf2ff;
     border-color: #edf2ff;
 }
-.dark-theme h2, 
-.dark-theme p, 
+
+.dark-theme h2,
+.dark-theme p,
 .dark-theme .links a {
     color: #edf2ff;
 }
