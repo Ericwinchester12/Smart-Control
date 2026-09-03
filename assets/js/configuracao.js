@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const botaoSalvar = document.querySelector(".botao");
+    const botaoSalvar = document.querySelector(".btn-salvar");
 
     if (botaoSalvar) {
         botaoSalvar.addEventListener("click", function() {

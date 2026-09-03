@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (botaoVoltar) {
         botaoVoltar.addEventListener("click", function() {
-            window.location.href = "index.html";
+            window.location.href = "dashboard.html";
         });
     }
 });

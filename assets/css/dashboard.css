@@ -78,7 +78,7 @@ main {
 }
 
 /* modo escuro do dashboard */
-/* .dark-theme {
+.dark-theme {
     background: linear-gradient(180deg, #171d2d 0%, #1d2434 100%);
     color: #edf2ff;
 }
@@ -121,7 +121,8 @@ main {
     background-color: #202838;
 }
 
-.dark-theme th, .dark-theme td {
+.dark-theme th,
+.dark-theme td {
     border: 1px solid #3d4a66;
     background-color: #202838;
 }
@@ -161,7 +162,7 @@ main {
 
 .dark-theme footer a {
     color: #dbe6ff;
-} */
+}
 
 #btn-dark-mode {
     background: transparent;
