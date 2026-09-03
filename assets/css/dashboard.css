@@ -1,7 +1,7 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 /* painel principal */
 
 header {
-    background-color: #72577C; 
+    background-color: #72577C;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,11 +63,11 @@ main {
 .menu-lateral {
     position: fixed;
     top: 50px;
-    right: -100%; 
+    right: -100%;
     width: 300px;
     height: 100%;
     background-color: #E4E4E4;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     padding: 20px;
     z-index: 999;
@@ -78,7 +78,7 @@ main {
 }
 
 /* modo escuro do dashboard */
-.dark-theme {
+/* .dark-theme {
     background: linear-gradient(180deg, #171d2d 0%, #1d2434 100%);
     color: #edf2ff;
 }
@@ -161,7 +161,7 @@ main {
 
 .dark-theme footer a {
     color: #dbe6ff;
-}
+} */
 
 #btn-dark-mode {
     background: transparent;
@@ -179,7 +179,15 @@ main {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, footer, a {
+body,
+header,
+.menu-lateral,
+.cartao-metrica,
+table,
+.botao-servico,
+input,
+footer,
+a {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
@@ -195,7 +203,7 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     border-radius: 8px;
     border: 1px solid #ccc;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -205,7 +213,7 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 12px;
-    position: absolute; 
+    position: absolute;
     top: 10px;
     right: 10px;
 }
@@ -257,7 +265,7 @@ body, header, .menu-lateral, .cartao-metrica, table, .botao-servico, input, foot
     color: black;
     font-size: 12px;
     font-weight: bold;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .titulo-tabela {
@@ -273,7 +281,8 @@ table {
     background-color: white;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;

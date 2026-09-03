@@ -7,9 +7,9 @@ function atualizarTextoBotaoTema() {
     }
 
     if (document.body.classList.contains("dark-theme")) {
-        btnDarkMode.textContent = "☀️";
-    } else {
         btnDarkMode.textContent = "🌙";
+    } else {
+        btnDarkMode.textContent = "☀️";
     }
 }
 
